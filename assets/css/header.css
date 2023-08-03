@@ -56,16 +56,19 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
     width: 100%;
     left: 0;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 1440px;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
   
   .dropdown-content .header {
     background: red;
-    padding: 16px;
+    padding: 0 16px;
     color: white;
   }
   

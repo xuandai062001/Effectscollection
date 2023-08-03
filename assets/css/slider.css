@@ -1,0 +1,9 @@
+/* owl carousel */
+.owl-carosel-part .first-slider .item {
+    align-items: center;
+    background-color: tomato;
+    color: white;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+  }
