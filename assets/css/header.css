@@ -17,7 +17,7 @@
   }
 
 
-  .header .logo{
+  .header .logo a{
     font-size: large;
     font-weight: bold;
     color: #fff;
@@ -58,7 +58,7 @@
     position: absolute;
     width: 100%;
     left: 0;
-    z-index: 1;
+    z-index: 999;
     padding: 0 20px;
     margin: 0 auto;
     max-width: 1440px;
@@ -106,7 +106,7 @@
   }
   
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 767.98px) {
     .column {
       width: 100%;
       height: auto;

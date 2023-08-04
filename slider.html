@@ -34,7 +34,7 @@
             <h2>Our carousel</h2>
             <div class="first-slider">
                 <h3>Slider with circular progress bar and pause button</h3>
-                <div id="owlcarousel-first-slider"  class="owl-carousel owl-theme">
+                <div id="owlcarousel-first-slider"  class="owl-carousel owl-theme gallery-list">
                     <div class="item"><h4>1</h4></div>
                     <div class="item"><h4>2</h4></div>
                     <div class="item"><h4>3</h4></div>
@@ -48,8 +48,43 @@
                     <div class="item"><h4>11</h4></div>
                     <div class="item"><h4>12</h4></div>
                 </div>
+                <div class="gallery-control">
+                    <div class="gallery-toggle" role="button">
+                        <svg class="play-percent" height="30" width="30" version="1.1" viewPort="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="" cx="15" cy="15" fill="transparent" r="13.5" stroke-dasharray="85" stroke-dashoffset="85"></circle>
+                            <circle class="bar" cx="15" cy="15" fill="transparent" r="13.5" stroke="#F1EFEB" stroke-dasharray="85" stroke-dashoffset="85"></circle>
+                            <path class="pause" fill-rule="evenodd" clip-rule="evenodd" d="M12 18V12H14.5V18H12Z" fill="#ECB74F"/>
+                            <path class="pause" fill-rule="evenodd" clip-rule="evenodd" d="M15.5 18V12H18V18H15.5Z" fill="#ECB74F"/>
+                            <path class="play" xmlns="http://www.w3.org/2000/svg" d="M18 15L13 18V12L18 15Z" fill="#ECB74F"/>
+                        </svg>
+                    </div>
+                    <div class="gallery-dots"></div>
+                </div>
             </div>
+            
         </div>
+
+
+
+
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://xuandai062001githubioeffectscollection.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
     </div>
 </body>
 </html>
