@@ -78,7 +78,7 @@ body {
 
 .dropdown-content .header {
   background: red;
-  padding: 0 16px;
+  /* padding: 0 16px; */
   color: white;
 }
 
