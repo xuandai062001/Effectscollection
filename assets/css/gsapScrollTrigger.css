@@ -1,0 +1,124 @@
+.div1, .div2{
+    height: 100vh;
+}
+
+.div1{
+    background-color: pink; 
+}
+
+.div2{
+    background-color: salmon;
+}
+
+.square{
+    width: 150px;
+    height: 150px;
+    background-color:  fuchsia;
+}
+
+.square2{
+    width: 150px;
+    height: 150px;
+    background-color:  aqua;
+}
+
+.red{
+    background-color: red;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.panel{
+    height: 100vh;
+    background-color: pink;
+}
+
+
+
+/* hozizontal scroll */
+
+.intro,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.intro {
+  background: #6e4ce1;
+  color: #f6f2e8;
+}
+
+footer {
+  background: #04091E;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.horizontal-scoll-wrapper a {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  display: block;
+  margin: 20px 0 0 0;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.2rem;
+  color: #F6F2E8;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #6e4ce1;
+}
+
+/* horizontal scroll */
+
+#horizontal-scoll {
+  padding: 200px 0;
+}
+
+.horizontal-scoll-wrapper {
+  overflow: hidden;
+  height: 525px;
+}
+
+.horizontal {
+  display: flex;
+  height: 100%;
+}
+
+.horizontal > div {
+  display: flex;
+  flex-shrink: 0;
+  padding: 0 5px;
+}
+
+.horizontal > div:first-child {
+  padding: 0 5px 0 15px;
+}
+
+.horizontal > div:last-child {
+  padding: 0 15px 0 5px;
+}
+
+.horizontal .card {
+  align-items: stretch;
+  width: 540px;
+  padding: 50px 40px;
+  padding-bottom: 0;
+  background: #6e4ce1;
+  border-radius: 38px;
+  color: #f6f2e8;
+}
