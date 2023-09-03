@@ -44,7 +44,8 @@ tl.to(".box", {x: 500, duration: 5})
       end: '+=2000px',
       pin: '#horizontal-scoll',
       scrub: true,
-      invalidateOnRefresh: true
+      invalidateOnRefresh: true,
+      // markers: true,
     }
   });
   
