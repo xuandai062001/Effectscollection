@@ -139,6 +139,78 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, molestiae. Pariatur laboriosam ipsam dolor dolorum</p>
                 </div>
             </div>
+
+            <div class="card">
+                <div class="card-image"><img src="./assets/images/2.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3>Card  16</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, molestiae. Pariatur laboriosam ipsam dolor dolorum</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image"><img src="./assets/images/3.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3>Card  17</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, molestiae. Pariatur laboriosam ipsam dolor dolorum</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image"><img src="./assets/images/4.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3>Card  18</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, molestiae. Pariatur laboriosam ipsam dolor dolorum</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image"><img src="./assets/images/5.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3>Card  19</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, molestiae. Pariatur laboriosam ipsam dolor dolorum</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image"><img src="./assets/images/6.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3>Card  20</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, molestiae. Pariatur laboriosam ipsam dolor dolorum</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image"><img src="./assets/images/7.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3>Card  21</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, molestiae. Pariatur laboriosam ipsam dolor dolorum</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image"><img src="./assets/images/8.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3>Card  22</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, molestiae. Pariatur laboriosam ipsam dolor dolorum</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image"><img src="./assets/images/9.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3>Card  23</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, molestiae. Pariatur laboriosam ipsam dolor dolorum</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image"><img src="./assets/images/10.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3>Card  24</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, molestiae. Pariatur laboriosam ipsam dolor dolorum</p>
+                </div>
+            </div>
         </div>
    
 
@@ -167,12 +239,12 @@
 
     <script>
     $(document).ready(function(){
-        function getPageList(totalPages, Page, maxLength){
+        function getPageList(totalPages, page, maxLength){
             function range(start, end){
                 return Array.from(Array(end - start + 1), (_, i) => i + start);
             }
 
-            var sideWidth= maxLength < 9 ? 1 : 2;
+            var sideWidth = maxLength < 9 ? 1 : 2;
             var leftWidth = (maxLength - sideWidth * 2 - 3) >> 1;
             var rightWidth = (maxLength - sideWidth * 2 - 3) >> 1;
 
@@ -205,11 +277,11 @@
 
                     $('.card-content .card').hide().slice((currentPage - 1) * limitPerPage, currentPage * limitPerPage).show();
 
-                    $(".pagination li").slide(1, -1).remove();
+                    $(".pagination li").slice(1, -1).remove();
                     getPageList(totalPages, currentPage, paginationSize).forEach(item => {
                         $("<li>").addClass("page-item").addClass(item ? "current-page" : "dots")
                         .toggleClass("active", item === currentPage).append($("<a>").addClass("page-link")
-                        .attr({href: "javascript:void(0)"}.text(item || "...")).insertBefore(".next-page"));
+                        .attr({href: "javascript:void(0)"}).text(item || "...")).insertBefore(".next-page");
                     });
 
 
@@ -226,6 +298,18 @@
 
                 $(".card-content").show();
                 showPage(1);
+
+                $(document).on("click", ".pagination li.current-page:not(.active)", function(){
+                    return showPage(+$(this).text());
+                });
+
+                $(".next-page").on("click", function(){
+                    return showPage(currentPage + 1);
+                });
+
+                $(".previous-page").on("click", function(){
+                    return showPage(currentPage - 1);
+                });
 
             });
     });
