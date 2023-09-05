@@ -211,18 +211,106 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, molestiae. Pariatur laboriosam ipsam dolor dolorum</p>
                 </div>
             </div>
+
+            <div class="card">
+                <div class="card-image"><img src="./assets/images/11.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3>Card  25</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, molestiae. Pariatur laboriosam ipsam dolor dolorum</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image"><img src="./assets/images/12.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3>Card  26</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, molestiae. Pariatur laboriosam ipsam dolor dolorum</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image"><img src="./assets/images/13.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3>Card  27</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, molestiae. Pariatur laboriosam ipsam dolor dolorum</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image"><img src="./assets/images/14.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3>Card  28</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, molestiae. Pariatur laboriosam ipsam dolor dolorum</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image"><img src="./assets/images/15.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3>Card  29</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, molestiae. Pariatur laboriosam ipsam dolor dolorum</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image"><img src="./assets/images/1.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3>Card  30</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, molestiae. Pariatur laboriosam ipsam dolor dolorum</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image"><img src="./assets/images/2.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3>Card  31</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, molestiae. Pariatur laboriosam ipsam dolor dolorum</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image"><img src="./assets/images/3.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3>Card  32</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, molestiae. Pariatur laboriosam ipsam dolor dolorum</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image"><img src="./assets/images/4.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3>Card  33</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, molestiae. Pariatur laboriosam ipsam dolor dolorum</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image"><img src="./assets/images/5.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3>Card  34</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, molestiae. Pariatur laboriosam ipsam dolor dolorum</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image"><img src="./assets/images/6.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3>Card  35</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, molestiae. Pariatur laboriosam ipsam dolor dolorum</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image"><img src="./assets/images/7.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3>Card  36</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, molestiae. Pariatur laboriosam ipsam dolor dolorum</p>
+                </div>
+            </div>
         </div>
    
 
         <div class="pagination">
-            <li class="page-item previous-page disable"><a href="#" class="page-link">Prev</a></li>
-            <li class="page-item current-page active"><a href="#" class="page-link">1</a></li>
-            <li class="page-item dots"><a href="#" class="page-link">...</a></li>
-            <li class="page-item current-page"><a href="#" class="page-link">5</a></li>
-            <li class="page-item current-page"><a href="#" class="page-link">6</a></li>
-            <li class="page-item dots"><a href="#" class="page-link">...</a></li>
-            <li class="page-item current-page"><a href="#" class="page-link">10</a></li>
-            <li class="page-item next-page"><a href="#" class="page-link">Next</a></li>
         </div> 
 
         <div id="disqus_thread"></div>
@@ -263,55 +351,55 @@
             return range(1, sideWidth).concat(0, range(page - leftWidth, page + rightWidth), 0, range(totalPages - sideWidth + 1, totalPages));
         } 
 
-            $(function(){
-                var numberOfItems = $(".card-content .card").length;
-                var limitPerPage = 3; // How many card items visible per a page
-                var totalPages = Math.ceil(numberOfItems / limitPerPage);
-                var paginationSize = 7; // How many page element visible in the pagination
-                var currentPage;
+        $(function(){
+            var numberOfItems = $(".card-content .card").length;
+            var limitPerPage = 3; // How many card items visible per a page
+            var totalPages = Math.ceil(numberOfItems / limitPerPage);
+            var paginationSize = 7; // How many page element visible in the pagination
+            var currentPage;
 
-                function showPage(whichPage){
-                    if(whichPage < 1 || whichPage > totalPages) return false;
+            function showPage(whichPage){
+                if(whichPage < 1 || whichPage > totalPages) return false;
 
-                    currentPage = whichPage;
+                currentPage = whichPage;
 
-                    $('.card-content .card').hide().slice((currentPage - 1) * limitPerPage, currentPage * limitPerPage).show();
+                $('.card-content .card').hide().slice((currentPage - 1) * limitPerPage, currentPage * limitPerPage).show();
 
-                    $(".pagination li").slice(1, -1).remove();
-                    getPageList(totalPages, currentPage, paginationSize).forEach(item => {
-                        $("<li>").addClass("page-item").addClass(item ? "current-page" : "dots")
-                        .toggleClass("active", item === currentPage).append($("<a>").addClass("page-link")
-                        .attr({href: "javascript:void(0)"}).text(item || "...")).insertBefore(".next-page");
-                    });
-
-
-                    $(".previous-page").toggleClass("disable", currentPage === 1);
-                    $(".next-page").toggleClass("disable", currentPage === totalPages);
-                    return true;
-                }
-
-                $(".pagination").append(
-                    $("<li>").addClass("page-item").addClass("previous-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("Prev")), 
-                    $("<li>").addClass("page-item").addClass("next-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("Next")),
-                );
-
-
-                $(".card-content").show();
-                showPage(1);
-
-                $(document).on("click", ".pagination li.current-page:not(.active)", function(){
-                    return showPage(+$(this).text());
+                $(".pagination li").slice(1, -1).remove();
+                getPageList(totalPages, currentPage, paginationSize).forEach(item => {
+                    $("<li>").addClass("page-item").addClass(item ? "current-page" : "dots")
+                    .toggleClass("active", item === currentPage).append($("<a>").addClass("page-link")
+                    .attr({href: "javascript:void(0)"}).text(item || "...")).insertBefore(".next-page");
                 });
 
-                $(".next-page").on("click", function(){
-                    return showPage(currentPage + 1);
-                });
 
-                $(".previous-page").on("click", function(){
-                    return showPage(currentPage - 1);
-                });
+                $(".previous-page").toggleClass("disable", currentPage === 1);
+                $(".next-page").toggleClass("disable", currentPage === totalPages);
+                return true;
+            }
 
+            $(".pagination").append(
+                $("<li>").addClass("page-item").addClass("previous-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("Prev")), 
+                $("<li>").addClass("page-item").addClass("next-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("Next")),
+            );
+
+
+            $(".card-content").show();
+            showPage(1);
+
+            $(document).on("click", ".pagination li.current-page:not(.active)", function(){
+                return showPage(+$(this).text());
             });
+
+            $(".next-page").on("click", function(){
+                return showPage(currentPage + 1);
+            });
+
+            $(".previous-page").on("click", function(){
+                return showPage(currentPage - 1);
+            });
+
+        });
     });
        
     </script>
